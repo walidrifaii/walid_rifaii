@@ -1,4 +1,4 @@
-# Portfolio of Hachem Rifaii
+# Portfolio ofwalid Rifaii
 <img src ="./src/assets/Screenshot 2024-11-30 182318.png" />
  
 This project was created with CRA (Create React App)
