@@ -11,9 +11,9 @@ export const Container = styled.section`
 
   .projects {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-template-rows: auto;
-    gap: 2rem;
+    gap: 1.5rem; /* Adjusted for smaller spacing */
     padding: 1rem;
     overflow: hidden;
 
@@ -37,7 +37,7 @@ export const Container = styled.section`
         align-items: center;
         justify-content: space-between;
         color: var(--blue);
-        margin-bottom: 2.6rem;
+        margin-bottom: 2rem;
 
         .project-links {
           display: flex;
@@ -46,19 +46,21 @@ export const Container = styled.section`
         }
 
         a > img {
-          width: 4rem;
+          width: 3.5rem; /* Adjusted size for smaller screens */
         }
       }
 
       h3 {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
         font-size: 1.8rem;
+        word-wrap: break-word;
       }
 
       p {
         font-size: 1.4rem;
         letter-spacing: 0.12rem;
-        margin-bottom: 2rem;
+        line-height: 1.5; /* Improved readability */
+        margin-bottom: 1.5rem;
 
         a {
           color: #fff;
@@ -77,7 +79,8 @@ export const Container = styled.section`
         .tech-list {
           display: flex;
           align-items: center;
-          gap: 1rem;
+          flex-wrap: wrap; /* Wrap items on smaller screens */
+          gap: 0.8rem;
           font-size: 1.2rem;
           opacity: 0.8;
         }
@@ -92,6 +95,7 @@ export const Container = styled.section`
 
     .projects {
       grid-template-columns: 1fr 1fr;
+      gap: 1.5rem; /* Consistent spacing */
     }
   }
 
@@ -111,17 +115,17 @@ export const Container = styled.section`
     }
 
     .projects {
-      gap: 1rem;
+      gap: 1rem; /* Smaller gap for compact screens */
     }
 
     .project {
       padding: 1rem;
-      border-radius: 1rem;
+      border-radius: 0.5rem;
     }
 
     header {
       svg {
-        width: 40px;
+        width: 35px; /* Adjusted size */
       }
     }
 
