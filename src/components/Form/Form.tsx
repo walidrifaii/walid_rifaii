@@ -1,15 +1,15 @@
 import { Container, ContainerSucces } from './styles'
 import { useForm, ValidationError } from '@formspree/react'
 import { toast, ToastContainer } from 'react-toastify'
-import ReCAPTCHA from 'react-google-recaptcha'
 import { useEffect, useState } from 'react'
 import validator from 'validator'
 
 export function Form() {
-  const [state, handleSubmit] = useForm('xknkpqry')
+  const [state, handleSubmit] = useForm('xyzybbqg') // Replace with your Formspree form ID
   const [validEmail, setValidEmail] = useState(false)
-  const [isHuman, setIsHuman] = useState(false)
   const [message, setMessage] = useState('')
+
+  // Email validation function
   function verifyEmail(email: string) {
     if (validator.isEmail(email)) {
       setValidEmail(true)
@@ -17,6 +17,8 @@ export function Form() {
       setValidEmail(false)
     }
   }
+
+  // Side effect when form is successfully submitted
   useEffect(() => {
     if (state.succeeded) {
       toast.success('Email successfully sent!', {
@@ -27,7 +29,9 @@ export function Form() {
         toastId: 'succeeded',
       })
     }
-  })
+  }, [state.succeeded]) // Dependency to avoid unnecessary re-renders
+
+  // If submission succeeded, show success message
   if (state.succeeded) {
     return (
       <ContainerSucces>
@@ -43,10 +47,12 @@ export function Form() {
       </ContainerSucces>
     )
   }
+
   return (
     <Container>
       <h2>Get in touch using the form</h2>
       <form onSubmit={handleSubmit}>
+        {/* Email input */}
         <input
           placeholder="Email"
           id="email"
@@ -58,6 +64,8 @@ export function Form() {
           required
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
+        
+        {/* Message input */}
         <textarea
           required
           placeholder="Send a message to get started."
@@ -72,19 +80,16 @@ export function Form() {
           field="message"
           errors={state.errors}
         />
-        <ReCAPTCHA
-          sitekey="6Lfj9NYfAAAAAP8wPLtzrsSZeACIcGgwuEIRvbSg"
-          onChange={(e) => {
-            setIsHuman(true)
-          }}
-        ></ReCAPTCHA>
+
+        {/* Button will be disabled if submitting, invalid email or empty message */}
         <button
           type="submit"
-          disabled={state.submitting || !validEmail || !message || !isHuman}
+          disabled={state.submitting || !validEmail || !message}
         >
           Submit
         </button>
       </form>
+
       <ToastContainer />
     </Container>
   )
