@@ -67,8 +67,110 @@ export function Project() {
             </footer>
           </div>
         </ScrollAnimation>
+          <ScrollAnimation animateIn="flipInX">
+          <div className="project">
+            <header>
+              <svg
+                width="50"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#23ce6b"
+                strokeWidth="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <title>Folder</title>
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <div className="project-links">
+                <a
+                  href="https://www.midad.com.sa"
+                  target="\_blank"
+                  rel="noreferrer"
+                >
+                  <img src={externalLink} alt="Visit site" />
+                </a>
+              </div>
+            </header>
+            <div className="body">
+              <h3>Midad Real Estate</h3>
+              <p>Developed a comprehensive admin panel for an e-commerce real estate platform with full CRUD functionality for managing property listings, enhanced with smooth, interactive animations for adding, updating, and deleting properties. Integrated image galleries and property details to provide a clear and engaging overview. Implemented secure authentication and role-based access control to ensure only authorized admins can manage listings. Built a responsive Next.js frontend with animated transitions to improve usability, streamline property management, and optimize workflow for administrative tasks.</p>
+
+            </div>
+            <footer>
+              <ul className="tech-list">
+                <li>Reactjs</li>
+                <li>Laravel</li>
+                <li>mysql</li>
+              </ul>
+            </footer>
+          </div>
+        </ScrollAnimation>
+
+        
 
         <ScrollAnimation animateIn="flipInX">
+          <div className="project">
+            <header>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                <title>Folder</title>
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <div className="project-links">
+                <a href="https://github.com/walidrifaii/Code-_Magnet" target="\_blank" rel="noreferrer">
+                  <img src={githubIcon} alt="Visit site" />
+                </a>
+                <a  href="https://code-magnet.vercel.app/"target="\_blank" rel="noreferrer">
+                  <img src={externalLink} alt="Visit site" />
+                </a>
+              </div>
+            </header>
+            <div className="body">
+              <h3>Code Magnet</h3>
+              <p>
+              This project is a responsive  portfolio website built with React.js, styled with CSS, and enhanced with smooth animations using Framer Motion
+              </p>
+            </div>
+            <footer>
+              <ul className="tech-list">
+                <li>React</li>
+                <li>Framer motion</li>
+              </ul>
+            </footer>
+          </div>
+        </ScrollAnimation>
+
+        <ScrollAnimation animateIn="flipInX">
+          <div className="project">
+            <header>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " stroke-width="1" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+              <div className="project-links">
+                <a href="#" target="_blank" rel="noreferrer">
+                  <img src={githubIcon} alt="Visit site" />
+                </a>
+                <a href="https://gega-bite.vercel.app" target="_blank" rel="noreferrer">
+                  <img src={externalLink} alt="Visit site" />
+                </a>
+              </div>
+            </header>
+            <div className="body">
+              <h3>Gega Bite Menu</h3>
+<p>Developed a dynamic restaurant menu management system with full CRUD functionality for dishes, integrated image uploads, and real-time data retrieval via a RESTful API using Express.js. Implemented secure authentication and role-based access control for admin management, optimized data storage with a structured database schema, and created a responsive Next.js frontend for seamless browsing of menu items, descriptions, prices, and images to enhance user experience and streamline menu updates.</p>
+            </div>
+            <footer>
+              <ul className="tech-list">
+                <li>Nextjs</li>
+                <li>TailwindCss</li>
+                <li>Nodejs</li>
+                <li>MongoDB</li>
+              </ul>
+            </footer>
+          </div>
+        </ScrollAnimation>
+
+      <ScrollAnimation animateIn="flipInX">
           <div className="project">
             <header>
               <svg
@@ -116,108 +218,6 @@ export function Project() {
               <ul className="tech-list">
                 <li>laravel</li>
                 <li>bootstrap</li>
-                <li>mysql</li>
-              </ul>
-            </footer>
-          </div>
-        </ScrollAnimation>
-
-        <ScrollAnimation animateIn="flipInX">
-          <div className="project">
-            <header>
-              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-                <title>Folder</title>
-                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-              </svg>
-              <div className="project-links">
-                <a href="https://github.com/walidrifaii/Code-_Magnet" target="\_blank" rel="noreferrer">
-                  <img src={githubIcon} alt="Visit site" />
-                </a>
-                <a  href="https://code-magnet.vercel.app/"target="\_blank" rel="noreferrer">
-                  <img src={externalLink} alt="Visit site" />
-                </a>
-              </div>
-            </header>
-            <div className="body">
-              <h3>Code Magnet</h3>
-              <p>
-              This project is a responsive  portfolio website built with React.js, styled with CSS, and enhanced with smooth animations using Framer Motion
-              </p>
-            </div>
-            <footer>
-              <ul className="tech-list">
-                <li>React</li>
-                <li>Framer motion</li>
-              </ul>
-            </footer>
-          </div>
-        </ScrollAnimation>
-
-        <ScrollAnimation animateIn="flipInX">
-          <div className="project">
-            <header>
-              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " stroke-width="1" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-              <div className="project-links">
-                <a href="https://github.com/CodeVinayak/MediBook-Medical-Appointment-Scheduler-with-Health-History" target="_blank" rel="noreferrer">
-                  <img src={githubIcon} alt="Visit site" />
-                </a>
-                <a href="https://medibook.vinayaksingh.com" target="_blank" rel="noreferrer">
-                  <img src={externalLink} alt="Visit site" />
-                </a>
-              </div>
-            </header>
-            <div className="body">
-              <h3>MediBook: Medical Appointment Scheduler with Health History</h3>
-              <p>Developed a secure medical appointment management platform with CRUD functionality, utilizing role-based access control, encryption techniques, and a robust MySQL database with normalized schema design and stored procedures for efficient scheduling, data privacy, and reliable retrieval of patient records.</p>
-            </div>
-            <footer>
-              <ul className="tech-list">
-                <li>PHP</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>MySQL</li>
-              </ul>
-            </footer>
-          </div>
-        </ScrollAnimation>
-
-        <ScrollAnimation animateIn="flipInX">
-          <div className="project">
-            <header>
-              <svg
-                width="50"
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#23ce6b"
-                strokeWidth="1"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <title>Folder</title>
-                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-              </svg>
-              <div className="project-links">
-                <a
-                  href="https://abbeautyfoundation.com/"
-                  target="\_blank"
-                  rel="noreferrer"
-                >
-                  <img src={externalLink} alt="Visit site" />
-                </a>
-              </div>
-            </header>
-            <div className="body">
-              <h3>AB Beauty Foundation - Over 20 Years of Excellence in Beauty</h3>
-              <p>
-              AB Beauty Foundation combines 24+ years of expertise with high-quality beauty treatments and products. Specializing in hairstyling, skincare, and nails, the business prides itself on using top-notch products and techniques in a welcoming, professional environment. With an online shop featuring affordable beauty essentials like gel polish and UV equipment, it ensures customer satisfaction with delivery options and 24/7 support.
-              </p>
-            </div>
-            <footer>
-              <ul className="tech-list">
-                <li>Laravel</li>
-                <li>Bootstrap</li>
                 <li>mysql</li>
               </ul>
             </footer>
