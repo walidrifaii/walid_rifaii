@@ -189,7 +189,7 @@ export function Project() {
               </svg>
               <div className="project-links">
                 <a
-                  href="https://sayescell.com/"
+                  href="https://www.thanderball.shop/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -199,26 +199,15 @@ export function Project() {
             </header>
             <div className="body">
               <h3>
-                 Sayes Cell - Your Trusted Mobile and Accessories Store
+                 thanderball.shop - Your Trusted T_shirt  Store
               </h3>
-              <p>
-                Sayes Cell is an online store offering the latest phones and
-                accessories. The site features a user-friendly shopping
-                experience, showcasing various products such as perfumes, games,
-                tablets, and mobile phones. It also provides phone maintenance
-                services like screen repairs and battery replacements. The
-                business emphasizes high-quality products, customer
-                satisfaction, and expert service. The site highlights the
-                company's commitment to reliability, transparency, and
-                exceptional customer support, making it a trusted choice for
-                tech needs.
-              </p>
+              <p>Developed a football-themed e-commerce platform using Shopify to sell customizable T-shirts, integrating a user-friendly storefront with dynamic product listings, detailed descriptions, and high-quality images. Implemented seamless payment processing, inventory management, and order tracking, while leveraging Shopify's built-in features for marketing, discounts, and customer engagement. Designed a responsive, visually appealing frontend to enhance shopping experience and streamline purchase flow for football fans worldwide.</p>
+
             </div>
             <footer>
               <ul className="tech-list">
-                <li>laravel</li>
-                <li>bootstrap</li>
-                <li>mysql</li>
+                <li>Shopify</li>
+              
               </ul>
             </footer>
           </div>
